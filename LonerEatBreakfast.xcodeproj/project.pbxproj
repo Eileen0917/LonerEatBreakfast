@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		711E0F041ECC518C00520E14 /* Loner.png in Resources */ = {isa = PBXBuildFile; fileRef = 711E0F001ECC518C00520E14 /* Loner.png */; };
+		711E0F051ECC518C00520E14 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 711E0F011ECC518C00520E14 /* bg.jpg */; };
+		711E0F061ECC518C00520E14 /* trash.gif in Resources */ = {isa = PBXBuildFile; fileRef = 711E0F021ECC518C00520E14 /* trash.gif */; };
+		711E0F071ECC518C00520E14 /* breakfast.png in Resources */ = {isa = PBXBuildFile; fileRef = 711E0F031ECC518C00520E14 /* breakfast.png */; };
 		718867181EB09CB700AD11F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718867171EB09CB700AD11F8 /* AppDelegate.swift */; };
 		7188671A1EB09CB700AD11F8 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 718867191EB09CB700AD11F8 /* GameScene.sks */; };
 		7188671C1EB09CB700AD11F8 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7188671B1EB09CB700AD11F8 /* Actions.sks */; };
@@ -37,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		711E0F001ECC518C00520E14 /* Loner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Loner.png; path = "../../邊緣人吃早餐圖檔/Loner.png"; sourceTree = "<group>"; };
+		711E0F011ECC518C00520E14 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bg.jpg; path = "../../邊緣人吃早餐圖檔/bg.jpg"; sourceTree = "<group>"; };
+		711E0F021ECC518C00520E14 /* trash.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = trash.gif; path = "../../邊緣人吃早餐圖檔/trash.gif"; sourceTree = "<group>"; };
+		711E0F031ECC518C00520E14 /* breakfast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = breakfast.png; path = "../../邊緣人吃早餐圖檔/breakfast.png"; sourceTree = "<group>"; };
 		718867141EB09CB700AD11F8 /* LonerEatBreakfast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LonerEatBreakfast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		718867171EB09CB700AD11F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		718867191EB09CB700AD11F8 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -80,6 +88,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		711E0EFF1ECC516800520E14 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				711E0F001ECC518C00520E14 /* Loner.png */,
+				711E0F011ECC518C00520E14 /* bg.jpg */,
+				711E0F021ECC518C00520E14 /* trash.gif */,
+				711E0F031ECC518C00520E14 /* breakfast.png */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
 		7188670B1EB09CB700AD11F8 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +122,7 @@
 		718867161EB09CB700AD11F8 /* LonerEatBreakfast */ = {
 			isa = PBXGroup;
 			children = (
+				711E0EFF1ECC516800520E14 /* image */,
 				718867171EB09CB700AD11F8 /* AppDelegate.swift */,
 				718867191EB09CB700AD11F8 /* GameScene.sks */,
 				7188671B1EB09CB700AD11F8 /* Actions.sks */,
@@ -241,10 +261,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				711E0F061ECC518C00520E14 /* trash.gif in Resources */,
 				718867231EB09CB700AD11F8 /* Main.storyboard in Resources */,
+				711E0F041ECC518C00520E14 /* Loner.png in Resources */,
 				7188671A1EB09CB700AD11F8 /* GameScene.sks in Resources */,
 				718867251EB09CB700AD11F8 /* Assets.xcassets in Resources */,
 				718867281EB09CB700AD11F8 /* LaunchScreen.storyboard in Resources */,
+				711E0F051ECC518C00520E14 /* bg.jpg in Resources */,
+				711E0F071ECC518C00520E14 /* breakfast.png in Resources */,
 				7188671C1EB09CB700AD11F8 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,6 +541,7 @@
 				718867441EB09CB700AD11F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		718867451EB09CB700AD11F8 /* Build configuration list for PBXNativeTarget "LonerEatBreakfastTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +550,7 @@
 				718867471EB09CB700AD11F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		718867481EB09CB700AD11F8 /* Build configuration list for PBXNativeTarget "LonerEatBreakfastUITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +559,7 @@
 				7188674A1EB09CB700AD11F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
