@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		711E0F041ECC518C00520E14 /* Loner.png in Resources */ = {isa = PBXBuildFile; fileRef = 711E0F001ECC518C00520E14 /* Loner.png */; };
-		711E0F051ECC518C00520E14 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 711E0F011ECC518C00520E14 /* bg.jpg */; };
-		711E0F061ECC518C00520E14 /* trash.gif in Resources */ = {isa = PBXBuildFile; fileRef = 711E0F021ECC518C00520E14 /* trash.gif */; };
-		711E0F071ECC518C00520E14 /* breakfast.png in Resources */ = {isa = PBXBuildFile; fileRef = 711E0F031ECC518C00520E14 /* breakfast.png */; };
 		718867181EB09CB700AD11F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718867171EB09CB700AD11F8 /* AppDelegate.swift */; };
 		7188671A1EB09CB700AD11F8 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 718867191EB09CB700AD11F8 /* GameScene.sks */; };
 		7188671C1EB09CB700AD11F8 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7188671B1EB09CB700AD11F8 /* Actions.sks */; };
@@ -21,6 +17,10 @@
 		718867281EB09CB700AD11F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 718867261EB09CB700AD11F8 /* LaunchScreen.storyboard */; };
 		718867331EB09CB700AD11F8 /* LonerEatBreakfastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718867321EB09CB700AD11F8 /* LonerEatBreakfastTests.swift */; };
 		7188673E1EB09CB700AD11F8 /* LonerEatBreakfastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7188673D1EB09CB700AD11F8 /* LonerEatBreakfastUITests.swift */; };
+		7195E7D71EDE6874000A360F /* MainMenu.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7195E7D61EDE6874000A360F /* MainMenu.sks */; };
+		7195E7DB1EDE68C2000A360F /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7195E7DA1EDE68C2000A360F /* MainMenuScene.swift */; };
+		7195E7DD1EDE6A1D000A360F /* GameplayScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7195E7DC1EDE6A1D000A360F /* GameplayScene.sks */; };
+		7195E7DF1EDE6AA8000A360F /* GameplaySceneClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7195E7DE1EDE6AA8000A360F /* GameplaySceneClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,10 +41,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		711E0F001ECC518C00520E14 /* Loner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Loner.png; path = "../../邊緣人吃早餐圖檔/Loner.png"; sourceTree = "<group>"; };
-		711E0F011ECC518C00520E14 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bg.jpg; path = "../../邊緣人吃早餐圖檔/bg.jpg"; sourceTree = "<group>"; };
-		711E0F021ECC518C00520E14 /* trash.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = trash.gif; path = "../../邊緣人吃早餐圖檔/trash.gif"; sourceTree = "<group>"; };
-		711E0F031ECC518C00520E14 /* breakfast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = breakfast.png; path = "../../邊緣人吃早餐圖檔/breakfast.png"; sourceTree = "<group>"; };
 		718867141EB09CB700AD11F8 /* LonerEatBreakfast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LonerEatBreakfast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		718867171EB09CB700AD11F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		718867191EB09CB700AD11F8 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -61,6 +57,10 @@
 		718867391EB09CB700AD11F8 /* LonerEatBreakfastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LonerEatBreakfastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7188673D1EB09CB700AD11F8 /* LonerEatBreakfastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LonerEatBreakfastUITests.swift; sourceTree = "<group>"; };
 		7188673F1EB09CB700AD11F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7195E7D61EDE6874000A360F /* MainMenu.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenu.sks; sourceTree = "<group>"; };
+		7195E7DA1EDE68C2000A360F /* MainMenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuScene.swift; sourceTree = "<group>"; };
+		7195E7DC1EDE6A1D000A360F /* GameplayScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameplayScene.sks; sourceTree = "<group>"; };
+		7195E7DE1EDE6AA8000A360F /* GameplaySceneClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameplaySceneClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,17 +88,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		711E0EFF1ECC516800520E14 /* image */ = {
-			isa = PBXGroup;
-			children = (
-				711E0F001ECC518C00520E14 /* Loner.png */,
-				711E0F011ECC518C00520E14 /* bg.jpg */,
-				711E0F021ECC518C00520E14 /* trash.gif */,
-				711E0F031ECC518C00520E14 /* breakfast.png */,
-			);
-			name = image;
-			sourceTree = "<group>";
-		};
 		7188670B1EB09CB700AD11F8 = {
 			isa = PBXGroup;
 			children = (
@@ -122,7 +111,8 @@
 		718867161EB09CB700AD11F8 /* LonerEatBreakfast */ = {
 			isa = PBXGroup;
 			children = (
-				711E0EFF1ECC516800520E14 /* image */,
+				7195E7D81EDE687D000A360F /* Classes */,
+				7195E7D51EDE685F000A360F /* Scene */,
 				718867171EB09CB700AD11F8 /* AppDelegate.swift */,
 				718867191EB09CB700AD11F8 /* GameScene.sks */,
 				7188671B1EB09CB700AD11F8 /* Actions.sks */,
@@ -152,6 +142,32 @@
 				7188673F1EB09CB700AD11F8 /* Info.plist */,
 			);
 			path = LonerEatBreakfastUITests;
+			sourceTree = "<group>";
+		};
+		7195E7D51EDE685F000A360F /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				7195E7D61EDE6874000A360F /* MainMenu.sks */,
+				7195E7DC1EDE6A1D000A360F /* GameplayScene.sks */,
+			);
+			name = Scene;
+			sourceTree = "<group>";
+		};
+		7195E7D81EDE687D000A360F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7195E7D91EDE688C000A360F /* SceneClass */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		7195E7D91EDE688C000A360F /* SceneClass */ = {
+			isa = PBXGroup;
+			children = (
+				7195E7DA1EDE68C2000A360F /* MainMenuScene.swift */,
+				7195E7DE1EDE6AA8000A360F /* GameplaySceneClass.swift */,
+			);
+			name = SceneClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +238,7 @@
 				TargetAttributes = {
 					718867131EB09CB700AD11F8 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = UFAD47L9NG;
 						ProvisioningStyle = Automatic;
 					};
 					7188672D1EB09CB700AD11F8 = {
@@ -261,14 +278,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				711E0F061ECC518C00520E14 /* trash.gif in Resources */,
 				718867231EB09CB700AD11F8 /* Main.storyboard in Resources */,
-				711E0F041ECC518C00520E14 /* Loner.png in Resources */,
+				7195E7D71EDE6874000A360F /* MainMenu.sks in Resources */,
 				7188671A1EB09CB700AD11F8 /* GameScene.sks in Resources */,
 				718867251EB09CB700AD11F8 /* Assets.xcassets in Resources */,
+				7195E7DD1EDE6A1D000A360F /* GameplayScene.sks in Resources */,
 				718867281EB09CB700AD11F8 /* LaunchScreen.storyboard in Resources */,
-				711E0F051ECC518C00520E14 /* bg.jpg in Resources */,
-				711E0F071ECC518C00520E14 /* breakfast.png in Resources */,
 				7188671C1EB09CB700AD11F8 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +311,8 @@
 			files = (
 				7188671E1EB09CB700AD11F8 /* GameScene.swift in Sources */,
 				718867201EB09CB700AD11F8 /* GameViewController.swift in Sources */,
+				7195E7DB1EDE68C2000A360F /* MainMenuScene.swift in Sources */,
+				7195E7DF1EDE6AA8000A360F /* GameplaySceneClass.swift in Sources */,
 				718867181EB09CB700AD11F8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,6 +465,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UFAD47L9NG;
 				INFOPLIST_FILE = LonerEatBreakfast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ntust.csie.LonerEatBreakfast;
@@ -460,6 +478,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UFAD47L9NG;
 				INFOPLIST_FILE = LonerEatBreakfast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ntust.csie.LonerEatBreakfast;

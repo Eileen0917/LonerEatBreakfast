@@ -16,7 +16,7 @@ class GameScene: SKScene {
     
     override func didMove(to view: SKView) {
         
-        let background = SKSpriteNode(imageNamed: "bg.jpg")
+        let background = SKSpriteNode(imageNamed: "bg")
         background.position = CGPoint(x: self.frame.midX, y: self.frame.midY)
         self.addChild(background)
         
