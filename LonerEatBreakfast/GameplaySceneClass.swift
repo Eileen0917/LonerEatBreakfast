@@ -16,12 +16,17 @@ class GameplaySceneClass: SKScene, SKPhysicsContactDelegate {
     private var itemController = ItemController()
     private var scoreLabel: SKLabelNode?
     private var score = 0
-
-
+    
+    var bgMusic: SKAudioNode!
+    var actionMusic: SKAudioNode!
  
     override func didMove(to view: SKView) {
         initializeGame()
         
+        if let musicURL = Bundle.main.url(forResource: "If_I_Had_a_Chicken", withExtension: "mp3"){
+            bgMusic = SKAudioNode(url: musicURL)
+            addChild(bgMusic)
+        }
     }
     
     override func update(_ currentTime: TimeInterval) {
@@ -63,6 +68,9 @@ class GameplaySceneClass: SKScene, SKPhysicsContactDelegate {
             score += 1;
             scoreLabel?.text = String(score)
             secondBody.node?.removeFromParent()
+            
+            let playAction = SKAction.playSoundFileNamed("crrect_answer1.mp3", waitForCompletion: false)
+            run(playAction)
         }
         
         if firstBody.node?.name == "Player" && secondBody.node?.name == "trash" {
@@ -72,12 +80,18 @@ class GameplaySceneClass: SKScene, SKPhysicsContactDelegate {
             let alert = UIAlertView(title: "", message: "You Lose!!!", delegate: self, cancelButtonTitle: "AGAIN!!!")
             alert.show()
             
+            let playAction = SKAction.playSoundFileNamed("jump09.mp3", waitForCompletion: false)
+            run(playAction)
+            
 //            Timer.scheduledTimer(timeInterval: TimeInterval(2), target: self, selector: #selector(GameplaySceneClass.restartGame), userInfo: nil, repeats: false)
         }
         
-        if (score > 3){
+        if (score > 9){
             let alert = UIAlertView(title: "", message: "You Win!!!", delegate: self, cancelButtonTitle: "AGAIN!!!")
             alert.show()
+            
+            firstBody.node?.removeFromParent()
+            secondBody.node?.removeFromParent()
         }
     }
     

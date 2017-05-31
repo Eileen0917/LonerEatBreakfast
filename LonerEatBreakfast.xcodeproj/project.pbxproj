@@ -23,6 +23,9 @@
 		7195E7DF1EDE6AA8000A360F /* GameplaySceneClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7195E7DE1EDE6AA8000A360F /* GameplaySceneClass.swift */; };
 		7195E7E21EDE7036000A360F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7195E7E11EDE7036000A360F /* Player.swift */; };
 		7195E7E51EDE7613000A360F /* ItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7195E7E41EDE7613000A360F /* ItemController.swift */; };
+		7195E7E71EDE9903000A360F /* If_I_Had_a_Chicken.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7195E7E61EDE9903000A360F /* If_I_Had_a_Chicken.mp3 */; };
+		7195E7F01EDEA1B3000A360F /* crrect_answer1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7195E7EF1EDEA1B3000A360F /* crrect_answer1.mp3 */; };
+		7195E7F21EDEA27A000A360F /* jump09.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7195E7F11EDEA27A000A360F /* jump09.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,9 @@
 		7195E7DE1EDE6AA8000A360F /* GameplaySceneClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameplaySceneClass.swift; sourceTree = "<group>"; };
 		7195E7E11EDE7036000A360F /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		7195E7E41EDE7613000A360F /* ItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemController.swift; sourceTree = "<group>"; };
+		7195E7E61EDE9903000A360F /* If_I_Had_a_Chicken.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = If_I_Had_a_Chicken.mp3; path = ../../../Downloads/If_I_Had_a_Chicken.mp3; sourceTree = "<group>"; };
+		7195E7EF1EDEA1B3000A360F /* crrect_answer1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = crrect_answer1.mp3; path = ../../../Downloads/crrect_answer1.mp3; sourceTree = "<group>"; };
+		7195E7F11EDEA27A000A360F /* jump09.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = jump09.mp3; path = ../../../Downloads/jump09.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,7 @@
 		718867161EB09CB700AD11F8 /* LonerEatBreakfast */ = {
 			isa = PBXGroup;
 			children = (
+				7195E7E81EDE9D03000A360F /* music */,
 				7195E7D81EDE687D000A360F /* Classes */,
 				7195E7D51EDE685F000A360F /* Scene */,
 				718867171EB09CB700AD11F8 /* AppDelegate.swift */,
@@ -190,6 +197,16 @@
 				7195E7E41EDE7613000A360F /* ItemController.swift */,
 			);
 			name = ItemControllerClass;
+			sourceTree = "<group>";
+		};
+		7195E7E81EDE9D03000A360F /* music */ = {
+			isa = PBXGroup;
+			children = (
+				7195E7F11EDEA27A000A360F /* jump09.mp3 */,
+				7195E7EF1EDEA1B3000A360F /* crrect_answer1.mp3 */,
+				7195E7E61EDE9903000A360F /* If_I_Had_a_Chicken.mp3 */,
+			);
+			name = music;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,11 +319,14 @@
 			files = (
 				718867231EB09CB700AD11F8 /* Main.storyboard in Resources */,
 				7195E7D71EDE6874000A360F /* MainMenu.sks in Resources */,
+				7195E7F01EDEA1B3000A360F /* crrect_answer1.mp3 in Resources */,
 				7188671A1EB09CB700AD11F8 /* GameScene.sks in Resources */,
+				7195E7E71EDE9903000A360F /* If_I_Had_a_Chicken.mp3 in Resources */,
 				718867251EB09CB700AD11F8 /* Assets.xcassets in Resources */,
 				7195E7DD1EDE6A1D000A360F /* GameplayScene.sks in Resources */,
 				718867281EB09CB700AD11F8 /* LaunchScreen.storyboard in Resources */,
 				7188671C1EB09CB700AD11F8 /* Actions.sks in Resources */,
+				7195E7F21EDEA27A000A360F /* jump09.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

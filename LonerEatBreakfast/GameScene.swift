@@ -14,12 +14,17 @@ class GameScene: SKScene {
     private var label : SKLabelNode?
     private var spinnyNode : SKShapeNode?
     
+    var bgMusic: SKAudioNode!
+    var stop: Bool!
+    
     override func didMove(to view: SKView) {
         
-        let background = SKSpriteNode(imageNamed: "bg")
-        background.position = CGPoint(x: self.frame.midX, y: self.frame.midY)
-        self.addChild(background)
-        
+        stop = false
+        if let musicURL = Bundle.main.url(forResource: "If_I_Had_a_Chicken", withExtension: "mp3"){
+            bgMusic = SKAudioNode(url: musicURL)
+            addChild(bgMusic)
+        }
+
 //        // Get label node from scene and store it for use later
 //        self.label = self.childNode(withName: "//helloLabel") as? SKLabelNode
 //        if let label = self.label {
@@ -67,11 +72,16 @@ class GameScene: SKScene {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        if let label = self.label {
-//            label.run(SKAction.init(named: "Pulse")!, withKey: "fadeInOut")
-//        }
-//        
-//        for t in touches { self.touchDown(atPoint: t.location(in: self)) }
+        
+        if(stop == false){
+            bgMusic.run(SKAction.pause())
+            stop = true
+        }
+        else {
+            bgMusic.run(SKAction.play())
+            stop = false
+            
+        }
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
