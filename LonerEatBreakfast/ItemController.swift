@@ -16,6 +16,8 @@ struct ColliderType {
 
 class ItemController {
     
+    private var minX = CGFloat(-200), maxX = CGFloat(200)
+    
     func spawnItems() -> SKSpriteNode {
         let item: SKSpriteNode?
         
@@ -23,15 +25,23 @@ class ItemController {
             
             item = SKSpriteNode(imageNamed: "trash")
             item!.name = "trash"
-            item!.setScale(0.6)
+            item!.setScale(0.1)
             item!.physicsBody = SKPhysicsBody(circleOfRadius: item!.size.height / 2)
         } else {
             
             item = SKSpriteNode(imageNamed: "breakfast")
             item!.name = "breakfast"
-            item!.setScale(0.7)
+            item!.setScale(0.2)
             item!.physicsBody = SKPhysicsBody(circleOfRadius: item!.size.height / 2)
         }
+        
+        item!.physicsBody?.categoryBitMask = ColliderType.BREAKFAST_AND_TRASH
+        
+        item!.zPosition = 3
+        item!.anchorPoint = CGPoint(x: 0.5, y: 0.5)
+        
+        item!.position.x = randomBetweenNumbers(firstNum: minX, secondNum: maxX)
+        item!.position.y = 500
 
         return item!
     }

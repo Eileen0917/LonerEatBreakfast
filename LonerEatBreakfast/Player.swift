@@ -28,19 +28,19 @@ class Player: SKSpriteNode {
             
             position.x -= 15
             
-//            if position.x < minX {
-//                position.x = minX
-//            }
+            if position.x < minX {
+                position.x = minX
+            }
             
         } else {
             
             position.x += 15
             
-//            if position.x > maxX {
-//                position.x = maxX
-//            }
-            
+            if position.x > maxX {
+                position.x = maxX
+            }
         }
     }
+    
 }
 
